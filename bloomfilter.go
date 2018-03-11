@@ -1,3 +1,5 @@
+// Package bloomfilter provides a simple interface to set up a standard bloom filter.
+// Refer to https://en.wikipedia.org/wiki/Bloom_filter for more details about the data structure.
 package bloomfilter
 
 import (
@@ -6,6 +8,11 @@ import (
 	"github.com/spaolacci/murmur3"
 )
 
+// Filter contains the structure of the algorithm.
+//  fpp: false positive probability
+// size: size of the bit array
+//   hc: hash count
+//   bs: bit array
 type Filter struct {
 	fpp  float64
 	size uint32
