@@ -37,20 +37,12 @@ func BenchmarkAdd100(b *testing.B) {
 	benchmarkAdd(100, b)
 }
 
-func BenchmarkAdd1000(b *testing.B) {
-	benchmarkAdd(1000, b)
-}
-
 func BenchmarkAdd10000(b *testing.B) {
 	benchmarkAdd(10000, b)
 }
 
 func BenchmarkCheck100(b *testing.B) {
 	benchmarkCheck(100, b)
-}
-
-func BenchmarkCheck1000(b *testing.B) {
-	benchmarkCheck(1000, b)
 }
 
 func BenchmarkCheck10000(b *testing.B) {
