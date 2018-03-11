@@ -1,4 +1,7 @@
 # Bloom filter
+[![Exago](https://api.exago.io:443/badge/rank/github.com/jgautheron/bloomfilter)](https://exago.io/project/github.com/jgautheron/bloomfilter)
+[![Exago](https://api.exago.io:443/badge/cov/github.com/jgautheron/bloomfilter)](https://exago.io/project/github.com/jgautheron/bloomfilter)
+
 
 [Standard Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter) implementation in Go.  
 [MurmurHash3](https://en.wikipedia.org/wiki/MurmurHash) is used for hashing.
