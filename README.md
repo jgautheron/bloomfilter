@@ -1,13 +1,13 @@
 # Bloom filter
 [![Exago](https://api.exago.io:443/badge/rank/github.com/jgautheron/bloomfilter)](https://exago.io/project/github.com/jgautheron/bloomfilter)
 [![Exago](https://api.exago.io:443/badge/cov/github.com/jgautheron/bloomfilter)](https://exago.io/project/github.com/jgautheron/bloomfilter)
+[![GoDoc](https://godoc.org/github.com/jgautheron/bloomfilter?status.svg)](https://godoc.org/github.com/jgautheron/bloomfilter)
 
 
-[Standard Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter) implementation in Go.  
-[MurmurHash3](https://en.wikipedia.org/wiki/MurmurHash) is used for hashing.
+[Standard Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter) implementation in Go. [MurmurHash3](https://en.wikipedia.org/wiki/MurmurHash) is used for hashing.
 
 ```go
-// First parameter is the maximum size.
+// First parameter is the maximum foreseeable size of your dataset.
 // The second is the false positive probability value that is acceptable for you.
 // Based on these two values, optimal values are calculated for the hash count & bit array size.
 bf := bloomfilter.New(1000, 0.025)
@@ -24,3 +24,6 @@ if bf.Check("foo") {
 BenchmarkAdd10000-8     	10000000	       147 ns/op
 BenchmarkCheck10000-8   	10000000	       152 ns/op
 ```
+
+## License
+MIT
